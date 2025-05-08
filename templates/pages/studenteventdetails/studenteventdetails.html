@@ -25,6 +25,7 @@
                 </tr>
             </table>
         </div>
+        {% if logined %}
         <form id="buttons-div" method="POST">
             <div>
                 <button id="signup-button" name="signup" type="submit" value="signup">SIGN UP</button>
@@ -33,6 +34,7 @@
                 <button id="unregister-button" name="unregister" type="submit" value="unregister">UNREGISTER</button>
             </div>
         </form>
+        {% endif %}
         {% if misc_msg %} <!-- can change if condition as needed-->
         <div class="alert-wrapper">
             <div class="alert">
